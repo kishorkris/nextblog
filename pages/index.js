@@ -1,8 +1,13 @@
 import ArticleList from "../components/ArticleList";
+import Head from "next/head";
 
 export default function Home({ articles }) {
   return (
     <>
+      <Head>
+        <title>Nextblog</title>
+      </Head>
+    
       <ArticleList articles={articles}></ArticleList>
     </>
   );
